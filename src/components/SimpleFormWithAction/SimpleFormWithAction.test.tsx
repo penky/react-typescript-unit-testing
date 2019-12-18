@@ -12,7 +12,7 @@ describe('test hello world', () => {
 
     const render = (component: JSX.Element) => ReactDOM.render(component, container);
 
-    it('render simple form, set textbox to goodbye and click button', async() => {
+    test('render simple form, set textbox to goodbye and click button', async() => {
         var message = '';
         const component = (<SimpleFormWithAction defaultMessage='Hello' invokeAction={ (msg) => message = msg}/>);
 

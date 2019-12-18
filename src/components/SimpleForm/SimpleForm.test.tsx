@@ -12,7 +12,7 @@ describe('test hello world', () => {
 
     const render = (component: JSX.Element) => ReactDOM.render(component, container);
 
-    it('render simple form, set textbox to goodbye and click button', async() => {
+    test('render simple form, set textbox to goodbye and click button', async() => {
         const component = (<SimpleForm formTitle='The Title' defaultMessage='Hello'/>);
 
         render(component);

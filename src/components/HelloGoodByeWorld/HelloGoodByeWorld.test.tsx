@@ -12,7 +12,7 @@ describe('test hello world', () => {
 
     const render = (component: JSX.Element) => ReactDOM.render(component, container);
 
-    it('render hello world jeff', () => {
+    test('render hello world jeff', () => {
         const component = <HelloGoodByeWorld name='Jeff'/>;
 
         // render the component into the "container" using the ReactDOM.render method

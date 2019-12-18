@@ -12,7 +12,7 @@ describe('test hello world', () => {
 
     const render = (component: JSX.Element) => ReactDOM.render(component, container);
 
-    it('render hello world jeff', () => {
+    test('render hello world jeff', () => {
         const component = <HelloWorld name='Jeff'/>;
 
         render(component);
@@ -25,7 +25,7 @@ describe('test hello world', () => {
         //expect(container.querySelector('h1'));
     });
 
-    it('render hello worlds jeff, peter', () => {
+    test('render hello worlds jeff, peter', () => {
         const component = <ol><HelloWorld name='Jeff'/><HelloWorld name='Peter'/></ol>;
 
         render(component);
